@@ -1,0 +1,137 @@
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:5432)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54322)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54322)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54322)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Start The Server First
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Permission denied the selected port is in use by another process select another port or use sudo to start program
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Stopped.
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)
+Server Started ---> (0.0.0.0:54321)

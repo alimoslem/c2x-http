@@ -1,0 +1,14 @@
+See instructions for running bot_script.go file <a href="https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md" target="_blank" class="create_script_link">here</a>
+Download <a href="/download_script?script_lang=go"target="_blank" class="create_script_link">Script</a>.
+See instructions for running bot_script.py file <a href="https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md" target="_blank" class="create_script_link">here</a>
+Download <a href="/download_script?script_lang=py"target="_blank" class="create_script_link">Script</a>.
+See instructions for running bot_script.py file <a href="https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md" target="_blank" class="create_script_link">here</a>
+Download <a href="/download_script?script_lang=py"target="_blank" class="create_script_link">Script</a>.
+See instructions for running bot_script.py file <a href="https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md" target="_blank" class="create_script_link">here</a>
+Download <a href="/download_script?script_lang=py"target="_blank" class="create_script_link">Script</a>.
+See instructions for running bot_script.py file <a href="https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md" target="_blank" class="create_script_link">here</a>
+Download <a href="/download_script?script_lang=py"target="_blank" class="create_script_link">Script</a>.
+See instructions for running bot_script.py file <a href="https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md" target="_blank" class="create_script_link">here</a>
+Download <a href="/download_script?script_lang=py"target="_blank" class="create_script_link">Script</a>.
+See instructions for running bot_script.go file <a href="https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md" target="_blank" class="create_script_link">here</a>
+Download <a href="/download_script?script_lang=go"target="_blank" class="create_script_link">Script</a>.

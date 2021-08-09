@@ -1,0 +1,818 @@
+!help for help
+--------Server Started--------
+Connection with 127.0.0.1:59716 closed!
+!help for help
+--------Server Started--------
+
+!help                   ---> show help
+!clear                  ---> clear terminal
+!exec "COMMAND"         ---> execute command
+Example: !exec "ls" -h "192.168.1.100:49700"
+Select Target           ---> -h "TARGET" -h "TARGET2"
+!set target "TARGET"    ---> set default target
+!get-zombies            ---> get connected zombies
+!software               ---> get target installed software
+!whoami                 ---> get logged in user
+            
+Connection with 127.0.0.1:59720 closed!
+
+!help                   ---> show help
+!clear                  ---> clear terminal
+!exec "COMMAND"         ---> execute command
+Example: !exec "ls" -h "192.168.1.100:49700"
+Select Target           ---> -h "TARGET" -h "TARGET2"
+!set target "TARGET"    ---> set default target
+!get-zombies            ---> get connected zombies
+!software               ---> get target installed software
+!whoami                 ---> get logged in user
+            
+127.0.0.1:60360
+Connection with 127.0.0.1:60360 closed!
+127.0.0.1:38290
+Default target is set --> 127.0.0.1:38290
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Target : 127.0.0.1:38290
+xenon
+
+Connection with 127.0.0.1:39114 closed!
+164.215.218.171:53348
+Target : 164.215.218.171:53348
+ Volume in drive C has no label.
+ Volume Serial Number is 40C0-FCAC
+
+ Directory of C:\Users\Admin\Downloads
+
+08/03/2021  06:04 PM    <DIR>          .
+08/03/2021  06:04 PM    <DIR>          ..
+07/26/2021  12:26 AM         1,302,095 1 (1).gif
+07/25/2021  11:30 PM           220,557 1.gif
+07/26/2021  12:27 AM           899,969 2.gif
+07/26/2021  12:30 AM         2,551,029 3.gif
+07/27/2021  12:11 AM            29,981 3511514.jpg
+07/26/2021  12:33 AM         1,713,323 4.gif
+07/18/2021  04:54 PM            46,201 Black.Mirror.S04E02.WEBRip.srt
+07/15/2021  03:14 PM         3,326,976 bot_script.exe
+08/03/2021  06:04 PM         3,480,576 c2x-client.exe
+07/27/2021  03:01 AM    <DIR>          Compressed
+07/09/2021  07:14 PM             4,226 Dame_Tu_Cosita_Challenge_The_NEW_Funny_Dance_Version_EMPxrXKAXxA.gif
+08/03/2021  12:50 PM    <DIR>          Documents
+07/09/2021  07:57 PM        31,394,547 find different game.sb3
+07/18/2021  06:11 PM             4,176 loki-series-intro_2.zip
+08/02/2021  02:12 PM    <DIR>          Programs
+08/03/2021  04:30 PM    <DIR>          Telegram Desktop
+06/23/2021  09:43 PM           107,978 Untitled-3 copy.ico
+07/09/2021  04:55 PM        20,630,443 Untitled-4 (1).sb3
+07/09/2021  05:29 PM        20,640,023 Untitled-4 (2).sb3
+07/09/2021  05:41 PM        20,795,377 Untitled-4 (3).sb3
+07/09/2021  10:26 PM        22,436,838 Untitled-4 (4).sb3
+07/09/2021  03:58 PM        18,835,085 Untitled-4.sb3
+07/29/2021  11:49 PM    <DIR>          Video
+07/20/2021  05:11 PM             7,584 WhatsApp Audio 2021-07-20 at 16.49.49.ogg
+06/26/2021  07:45 PM            24,229 WhatsApp Image 2021-06-26 at 19.45.03.jpeg
+07/13/2021  04:20 PM         2,664,960 windows
+07/08/2021  08:59 PM             3,549 zombie_script (1).py
+07/07/2021  08:26 PM             3,113 zombie_script.py
+              23 File(s)    151,122,835 bytes
+               7 Dir(s)  38,448,586,752 bytes free
+
+Target : 164.215.218.171:53348
+
+User accounts for \\DESKTOP-LJ3FFAH
+
+-------------------------------------------------------------------------------
+Admin                    Administrator            DefaultAccount           
+Guest                    WDAGUtilityAccount       
+The command completed successfully.
+
+
+Target : 164.215.218.171:53348
+exit status 2
+Target : 164.215.218.171:53348
+
+User accounts for \\DESKTOP-LJ3FFAH
+
+-------------------------------------------------------------------------------
+Admin                    Administrator            DefaultAccount           
+Guest                    WDAGUtilityAccount       
+The command completed successfully.
+
+
+Target : 164.215.218.171:53348
+desktop-lj3ffah\admin
+
+Target : 164.215.218.171:53348
+
+Name                                                          
+----                                                          
+Python 3.9.0 Test Suite (64-bit)                              
+Python 3.9.0 Core Interpreter (64-bit)                        
+Python 3.9.0 Development Libraries (64-bit)                   
+Python 3.9.0 Tcl/Tk Support (64-bit)                          
+Python 3.9.0 Standard Library (64-bit)                        
+Python 3.9.0 Documentation (64-bit)                           
+Python 3.9.0 pip Bootstrap (64-bit)                           
+Python 3.9.0 Executables (64-bit)                             
+Python 3.9.0 Utility Scripts (64-bit)                         
+Python 3.9.0 Add to Path (64-bit)                             
+Office 16 Click-to-Run Extensibility Component                
+Office 16 Click-to-Run Localization Component                 
+Office 16 Click-to-Run Licensing Component                    
+ASUS Aura SDK                                                 
+Microsoft .NET Core Host - 3.1.12 (x86)                       
+ASUS AURA Extension Card HAL                                  
+PHISON HAL                                                    
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40660    
+Microsoft Windows Desktop Runtime - 3.1.12 (x86)              
+AURA Ser
+Target : 164.215.218.171:53348
+Target : 164.215.218.171:53348
+ Volume in drive C has no label.
+ Volume Serial Number is 40C0-FCAC
+
+ Directory of C:\Users\Admin\Downloads
+
+08/03/2021  06:04 PM    <DIR>          .
+08/03/2021  06:04 PM    <DIR>          ..
+07/26/2021  12:26 AM         1,302,095 1 (1).gif
+07/25/2021  11:30 PM           220,557 1.gif
+07/26/2021  12:27 AM           899,969 2.gif
+07/26/2021  12:30 AM         2,551,029 3.gif
+07/27/2021  12:11 AM            29,981 3511514.jpg
+07/26/2021  12:33 AM         1,713,323 4.gif
+07/18/2021  04:54 PM            46,201 Black.Mirror.S04E02.WEBRip.srt
+07/15/2021  03:14 PM         3,326,976 bot_script.exe
+08/03/2021  06:04 PM         3,480,576 c2x-client.exe
+07/27/2021  03:01 AM    <DIR>          Compressed
+07/09/2021  07:14 PM             4,226 Dame_Tu_Cosita_Challenge_The_NEW_Funny_Dance_Version_EMPxrXKAXxA.gif
+08/03/2021  12:50 PM    <DIR>          Documents
+07/09/2021  07:57 PM        31,394,547 find different game.sb3
+07/18/2021  06:11 PM             4,176 loki-series-intro_2.zip
+08/02/2021  02:12 PM    <DIR>          Programs
+08/03/2021  04:30 PM    <DIR>          Telegram Desktop
+06/23/2021  09:43 PM           107,978 Untitled-3 copy.ico
+07/09/2021  04:55 PM        20,630,443 Untitled-4 (1).sb3
+07/09/2021  05:29 PM        20,640,023 Untitled-4 (2).sb3
+07/09/2021  05:41 PM        20,795,377 Untitled-4 (3).sb3
+07/09/2021  10:26 PM        22,436,838 Untitled-4 (4).sb3
+07/09/2021  03:58 PM        18,835,085 Untitled-4.sb3
+07/29/2021  11:49 PM    <DIR>          Video
+07/20/2021  05:11 PM             7,584 WhatsApp Audio 2021-07-20 at 16.49.49.ogg
+06/26/2021  07:45 PM            24,229 WhatsApp Image 2021-06-26 at 19.45.03.jpeg
+07/13/2021  04:20 PM         2,664,960 windows
+07/08/2021  08:59 PM             3,549 zombie_script (1).py
+07/07/2021  08:26 PM             3,113 zombie_script.py
+              23 File(s)    151,122,835 bytes
+               7 Dir(s)  38,446,264,320 bytes free
+
+Connection with 164.215.218.171:53348 closed!
+Connection with 31.56.161.78:54408 closed!
+31.56.161.78:54438
+Connection with 31.56.161.78:54438 closed!
+151.240.14.132:62955
+Default target is set --> 151.240.14.132:62955
+Target : 151.240.14.132:62955
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62955
+
+User accounts for \\DESKTOP-PTINJQC
+
+-------------------------------------------------------------------------------
+Administrator            DefaultAccount           Guest                    
+Sirblack                 WDAGUtilityAccount       
+The command completed successfully.
+
+
+Target : 151.240.14.132:62955
+
+Name                                                                   
+----                                                                   
+Python 3.9.5 Development Libraries (64-bit)                            
+Python 3.9.5 Standard Library (64-bit)                                 
+Python 3.9.5 Executables (64-bit)                                      
+Python 3.9.5 Utility Scripts (64-bit)                                  
+Python 3.9.5 Tcl/Tk Support (64-bit)                                   
+Python 3.9.5 Test Suite (64-bit)                                       
+Python 3.9.5 Documentation (64-bit)                                    
+Python 3.9.5 pip Bootstrap (64-bit)                                    
+Python 3.9.5 Core Interpreter (64-bit)                                 
+Microsoft DCF MUI (English) 2016                                       
+Microsoft Office Professional Plus 2016                                
+Microsoft OneNote MUI (English) 2016                                   
+Microsoft Office 32-bit Components 2016                                
+Microsoft Office Shared 32-bit MUI (English) 2016                      
+Microsoft Office OSM MUI (English) 2016                                
+Microsoft Office OSM UX MUI (English) 2016                             
+Microsoft InfoPath MUI (English) 2016                                  
+Micro
+Target : 151.240.14.132:62955
+Connection with 151.240.14.132:62955 closed!
+151.240.14.132:62986
+Default target is set --> 151.240.14.132:62986
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+desktop-ptinjqc\sirblack
+
+Target : 151.240.14.132:62986
+
+Name                                                                   
+----                                                                   
+Python 3.9.5 Development Libraries (64-bit)                            
+Python 3.9.5 Standard Library (64-bit)                                 
+Python 3.9.5 Executables (64-bit)                                      
+Python 3.9.5 Utility Scripts (64-bit)                                  
+Python 3.9.5 Tcl/Tk Support (64-bit)                                   
+Python 3.9.5 Test Suite (64-bit)                                       
+Python 3.9.5 Documentation (64-bit)                                    
+Python 3.9.5 pip Bootstrap (64-bit)                                    
+Python 3.9.5 Core Interpreter (64-bit)                                 
+Microsoft DCF MUI (English) 2016                                       
+Microsoft Office Professional Plus 2016                                
+Microsoft OneNote MUI (English) 2016                                   
+Microsoft Office 32-bit Components 2016                                
+Microsoft Office Shared 32-bit MUI (English) 2016                      
+Microsoft Office OSM MUI (English) 2016                                
+Microsoft Office OSM UX MUI (English) 2016                             
+Microsoft InfoPath MUI (English) 2016                                  
+Micro
+Connection with 151.240.14.132:62986 closed!
+Connection with 127.0.0.1:43532 closed!
+127.0.0.1:43926
+Default target is set --> 127.0.0.1:43926
+Target : 127.0.0.1:43926
+ks
+
+Target : 127.0.0.1:43926
+<script>alert(1)</script>
+
+Target : 127.0.0.1:43926
+Target : 127.0.0.1:43926
+<script>alert(1)</script>
+
+Connection with 127.0.0.1:43926 closed!
+!help for help
+--------Server Started--------
+127.0.0.1:54838
+Default target is set --> 127.0.0.1:54838
+Target : 127.0.0.1:54838
+xenon
+
+Target : 127.0.0.1:54838
+xenon
+
+Target : 127.0.0.1:54838
+c2x-client.exe
+c2x-client.go
+go.mod
+go.sum
+LICENSE
+README.md
+test.go
+
+Target : 127.0.0.1:54838
+/opt:
+droidcam-icon.png
+droidcam-uninstall
+google
+lampp
+metasploit-framework
+
+/usr/bin:
+[
+2to3-2.7
+2to3-3.6
+7z
+7za
+7zr
+aa-enabled
+aa-exec
+aclocal
+aclocal-1.16
+aconnect
+acpi_listen
+add-apt-repository
+addpart
+addr2line
+alsabat
+alsaloop
+alsamixer
+alsatplg
+alsaucm
+amidi
+amixer
+anydesk
+anydesk-global-settings
+aplay
+aplaymidi
+appres
+appstreamcli
+apropos
+apt
+apt-add-repository
+apt-cache
+apt-cdrom
+apt-config
+apt-extracttemplates
+apt-ftparchive
+apt-get
+apt-key
+apt-mark
+apt-sortpkgs
+ar
+arch
+arecord
+arecordmidi
+ark
+arm2hpdl
+as
+aseqdump
+aseqnet
+aspell
+aspell-import
+assistant
+atobm
+autoconf
+autoheader
+autom4te
+automake
+automake-1.16
+autoreconf
+autoscan
+autoupdate
+awk
+axfer
+b2sum
+balooctl
+baloo_file
+baloo_file_extractor
+baloo_filemetadata_temp_extractor
+baloosearch
+balooshow
+base32
+base64
+basename
+bash
+bashbug
+bc
+bccmd
+bdftopcf
+bdftruncate
+bison
+bison.yacc
+bitmap
+bluedevil-sendfile
+bluedevil-wizard
+bluemoon
+bluetoothctl
+bmtoa
+boltctl
+bootctl
+breeze-settings5
+broadwayd
+browse
+bsd-from
+bsd-write
+btattach
+btmgmt
+btmon
+btrfs
+btrfsck
+btrfs-convert
+btrfs-find-root
+btrfs-image
+btrfs-map-logical
+btrfs-select-super
+btrfstune
+bundle2.7
+bundler2.7
+bunzip2
+busctl
+busybox
+bwrap
+bzcat
+bzcmp
+bzdiff
+bzegrep
+bzexe
+bzfgrep
+bzgrep
+bzip2
+bzip2recover
+bzless
+bzmore
+c++
+c89
+c89-gcc
+c99
+c99-gcc
+cal
+calendar
+calibrate_ppa
+cancel
+capinfos
+captoinfo
+captype
+cat
+catchsegv
+catdoc
+catman
+catppt
+cautious-launcher
+cc
+cdrdao
+c++filt
+chacl
+chage
+chardet3
+chardetect3
+chattr
+chcon
+check-language-support
+checkXML5
+chfn
+chgrp
+chmod
+choom
+chown
+chrt
+chsh
+chvt
+cifscreds
+cifsdd
+cifsiostat
+ciptool
+ckbcomp
+cksum
+clear
+clear_console
+clusterdb
+cmp
+code
+codepage
+col
+colcrt
+colrm
+column
+comm
+compose
+configure-printer
+corelist
+cp
+cpan
+cpan5.30-i386-linux-gnu
+cpan5.30-x86_64-linux-gnu
+cpio
+cpp
+cpp-9
+crc32
+createdb
+createlang
+createuser
+c_rehash
+crontab
+cryfs
+cryfs-unmount
+csplit
+ctstat
+cupstestppd
+curl
+cut
+cvlc
+cvt
+cvtsudoers
+dash
+date
+dbus-cleanup-sockets
+dbus-daemon
+dbus-launch
+dbus-monitor
+dbus-run-session
+dbus-send
+dbus-update-activation-environment
+dbus-uuidgen
+dbwrap_tool
+dbxtool
+dc
+dconf
+dd
+ddstdecode
+deallocvt
+debconf
+debconf-apt-progress
+debconf-communicate
+debconf-copydb
+debconf-escape
+debconf-set-selections
+debconf-show
+deb-systemd-helper
+deb-systemd-invoke
+delpart
+delv
+derb
+designer
+desktop-file-edit
+desktop-file-install
+desktop-file-validate
+devdump
+df
+dfu-tool
+dh_autotools-dev_restoreconfig
+dh_autotools-dev_updateconfig
+dh_bash-completion
+dh_dkms
+dh_installxmlcatalogs
+dh_perl_openssl
+dh_python2
+diff
+diff3
+dig
+dir
+dircolors
+dirmngr
+dirmngr-client
+dirname
+dirsplit
+discord
+dmesg
+dnsdomainname
+dolphin
+domainname
+do-release-upgrade
+dotlock
+dotlock.mailutils
+dpkg
+dpkg-architecture
+dpkg-buildflags
+dpkg-buildpackage
+dpkg-checkbuilddeps
+dpkg-deb
+dpkg-distaddfile
+dpkg-divert
+dpkg-genbuildinfo
+dpkg-genchanges
+dpkg-gencontrol
+dpkg-gensymbols
+dpkg-maintscript-helper
+dpkg-mergechangelogs
+dpkg-name
+dpkg-parsechangelog
+dpkg-query
+dpkg-scanpackages
+dpkg-scansources
+dpkg-shlibdeps
+dpkg-source
+dpkg-split
+dpkg-statoverride
+dpkg-trigger
+dpkg-vendor
+driverless
+drkonqi-pk-debug-installer
+droidcam
+droidcam-cli
+dropdb
+droplang
+dropuser
+du
+dumpcap
+dumpkeys
+dump_xsettings
+dvipdf
+dwp
+echo
+ed
+edit
+editcap
+editor
+editres
+efibootdump
+efibootmgr
+egrep
+eject
+elfedit
+enc2xs
+encfs
+encfsctl
+encfssh
+encguess
+enchant-2
+enchant-lsmod-2
+env
+envsubst
+eps2eps
+eqn
+erb
+erb2.7
+esc-m
+ex
+exiftool
+exodus
+expand
+expiry
+expr
+factor
+faillog
+faked-sysv
+faked-tcp
+fakeroot
+fakeroot-sysv
+fakeroot-tcp
+fallocate
+false
+fc-cache
+fc-cat
+fc-conflist
+fc-list
+fc-match
+fc-pattern
+fc-query
+fc-scan
+fc-validate
+ffmpeg
+ffplay
+ffprobe
+fgconsole
+fgrep
+filan
+file
+file2brl
+fincore
+find
+findmnt
+findsmb
+firefox
+flatpak
+flock
+fmt
+fold
+fonttosfnt
+foo2ddst
+foo2ddst-wrapper
+foo2hbpl2
+foo2hbpl2-wrapper
+foo2hiperc
+foo2hiperc-wrapper
+foo2hp
+foo2hp2600-wrapper
+foo2lava
+foo2lava-wrapper
+foo2oak
+foo2oak-wrapper
+foo2qpdl
+foo2qpdl-wrapper
+foo2slx
+foo2slx-wrapper
+foo2xqx
+foo2xqx-wrapper
+foo2zjs
+foo2zjs-icc2ps
+foo2zjs-pstops
+foo2zjs-wrapper
+foomatic-rip
+free
+frm
+frm.mailutils
+from
+from.mailutils
+ftp
+funzip
+fuser
+fusermount
+fusermount3
+fwupdagent
+fw
+
+!help                   ---> show help
+!clear                  ---> clear terminal
+!exec "COMMAND"         ---> execute command
+Example: !exec "ls" -h "192.168.1.100:49700"
+Select Target           ---> -h "TARGET" -h "TARGET2"
+!set target "TARGET"    ---> set default target
+!get-zombies            ---> get connected zombies
+!software               ---> get target installed software
+!whoami                 ---> get logged in user
+            

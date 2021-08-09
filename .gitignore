@@ -1,0 +1,13 @@
+.idea
+venv*
+logs
+**/token.txt
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.pyc
+*.py[cod]
+*$py.class
+bot_script*
+test
+archives
+test*.py

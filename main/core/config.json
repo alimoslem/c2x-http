@@ -1,0 +1,9 @@
+{
+  "app_version": "Beta",
+  "web_listen_ip": "127.0.0.1",
+  "web_listen_port": "8585",
+  "web_user": "root",
+  "web_pass": "root",
+  "c2_listening_ip": "0.0.0.0",
+  "c2_listening_port": "443"
+}
