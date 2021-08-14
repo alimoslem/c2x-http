@@ -10,6 +10,7 @@ from threading import Thread
 from colorama import Fore
 
 serverLogger = Logger(file_name='server')
+serverModule = None
 
 
 class ServerModule:
@@ -70,6 +71,8 @@ class ServerModule:
         print(server_start_text_col)
 
     def __start_serving(self):
+        global serverModule
+        serverModule = self
         self.web_server.serve_forever()
 
     def stop_server(self):
