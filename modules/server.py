@@ -19,7 +19,7 @@ import re
 
 serverLogger = Logger(file_name='server')
 serverModule = None
-terminalLogger = Logger(file_name='server')
+terminalLogger = Logger(file_name='terminal')
 
 
 class ServerModule:
