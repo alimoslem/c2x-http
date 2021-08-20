@@ -375,7 +375,13 @@ Output:
             terminalLogger.log(command_output_text_in_terminal)
 
             # delete the command from serverModule.deleted_queued_commands list
-            serverModule.deleted_queued_commands.remove([client_address, command_entered, command_id])
+            try:
+                serverModule.deleted_queued_commands.remove([client_address, command_entered, command_id])
+            except ValueError:
+                pass
+
+            resp_text = self.send_done_msg()
+            self.wfile.write(bytes(resp_text, 'UTF-8'))
 
     def log_message(self, format, *args):
         pass
@@ -451,4 +457,11 @@ Output:
         send unknown cmd id response when cmd id is invalid
         '''
         json_string = json.dumps({'resp_type' : 'unknown_cmd_id'})
+        return json_string
+
+    def send_done_msg(self):
+        '''
+        send done response type when the command output successfully got
+        '''
+        json_string = json.dumps({'resp_type': 'done'})
         return json_string
