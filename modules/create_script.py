@@ -16,11 +16,11 @@ scripts_names = {
 }
 
 class ScriptCreator:
-    def __init__(self, lhost, lport, lang, is_from_gui=None):
+    def __init__(self, lhost, lport, lang, protocol):
         self.lhost = lhost
         self.lport = lport
         self.lang = str(lang).lower() # chosen language in create script tab
-        self.is_from_gui = is_from_gui
+        self.protocol = str(protocol).lower()
 
     def create(self):
         zombie_script_path = ''
@@ -42,6 +42,7 @@ class ScriptCreator:
         else:
             z_file_content = z_file_content.replace('replace_server_ip', self.lhost)
             z_file_content = z_file_content.replace('replace_server_port', self.lport)
+            z_file_content = z_file_content.replace('replace_server_protocol', self.protocol)
             new_file_content = z_file_content
 
             # create new file

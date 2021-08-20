@@ -291,6 +291,7 @@ $(document).on("click", ".event_create_script", function( event ) {
     var localhost_createscript = $("#localhost_create_script").val();
     var localport_createscript = $("#localport_create_script").val();
     var lang_create_script = $('.create_script_lang').val();
+    var cs_server_protocol = $('.create_script_protocol').val();
 
     if (localhost_createscript === "") {
         alert("LHost is required");
@@ -310,7 +311,8 @@ $(document).on("click", ".event_create_script", function( event ) {
         method: method_cs,
         data: {"localhost":localhost_createscript ,
             "localport":localport_createscript ,
-            "lang_create_script":lang_create_script},
+            "lang_create_script":lang_create_script,
+            "protocol_create_script":cs_server_protocol,},
         success: function(r) {
         }
 

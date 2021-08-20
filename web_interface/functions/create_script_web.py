@@ -36,6 +36,10 @@ class CreateScriptWeb:
         <input type="text" class="form-control" id="localport_create_script" placeholder="LPort" required>
       </div>
       
+    <select class="form-control create_script_protocol">
+        <option value="http">HTTP</option>
+        <option value="https">HTTPS</option>
+    </select>
     <select class="form-control create_script_lang">
         <option value="python">Python</option>
         <option value="go">Go</option>
@@ -70,7 +74,8 @@ def create_script_create_url_func():
         return redirect('/login', code=302)
 
     script_creator = ScriptCreator(lhost=request.form['localhost'], lport=request.form['localport'],
-                                   lang=request.form['lang_create_script'], is_from_gui=False)
+                                   lang=request.form['lang_create_script'],
+                                   protocol=request.form['protocol_create_script'])
     script_creator.create()
 
     return 'CreateScript Request Sent'
