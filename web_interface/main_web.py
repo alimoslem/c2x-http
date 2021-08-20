@@ -103,10 +103,10 @@ def main_web_start(
         global serverModuleVar
         return server_conf_stop_url_func(server_module_var=serverModuleVar, server_logger_var=serverLogger)
 
-    def server_conf_start_set_server_module(lip, lport):
+    def server_conf_start_set_server_module(lip, lport, use_https):
         global serverModuleVar
         if ((serverModuleVar is None) or (not serverModuleVar.connection_status)):
-            serverModuleVar = ServerModule(lip=lip, lport=lport)
+            serverModuleVar = ServerModule(lip=lip, lport=lport, use_https=use_https)
             serverModuleVar.start_server()
 
     @app_main.route('/server_conf_start', methods=['POST'])

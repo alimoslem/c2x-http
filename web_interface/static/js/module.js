@@ -237,6 +237,7 @@ $(document).on("click", ".start_server_event", function( event ) {
     var method = $("#server_conf_form").attr('method');
     var lip = $("#lip").val();
     var lport = $("#lport").val();
+    var server_protocol = $(".server_protocol").val();
 
     if (lip === "") {
         alert("Listening IP is required");
@@ -246,11 +247,15 @@ $(document).on("click", ".start_server_event", function( event ) {
         alert("Listening port is required");
         return;
     }
+    else if (server_protocol === "") {
+        alert("Server Protocol is required");
+        return;
+    }
 
     $.ajax({
         url: url,
         method: method,
-        data: {"lip":lip ,"lport":lport},
+        data: {"lip":lip ,"lport":lport, "server_protocol":server_protocol},
         success: function(r, jqXHR, textStatus, errorThrown) {
         }
         })

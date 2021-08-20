@@ -24,6 +24,9 @@
 .command_input{
   color: black!important;
 }
+.server_protocol{
+  color: black;
+}
 .terminal_get_default_target{
   color: #363535;
   font-size: 15px;

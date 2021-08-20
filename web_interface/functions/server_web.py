@@ -34,6 +34,12 @@ class ServerWebPage:
         <label class="sr-only">Listening Port</label>
         <input type="text" class="form-control" id="lport" placeholder="Port Number" required>
       </div>
+      
+  <select class="form-control server_protocol">
+        <option value="http">HTTP</option>
+        <option value="https">HTTPS</option>
+  </select>
+      <br>
       <button class="btn btn-primary mb-2 start_server_event">Start</button>
       <button class="btn btn-danger mb-2 stop_server_event" disabled>Stop</button>
     </form>
@@ -75,8 +81,15 @@ def server_conf_start_url_func(
     if not (check_login()):  # check if user is logged in ,returns true if is logged in
         return redirect('/login', code=302)
 
+
+    server_protocol = request.form['server_protocol']
+    use_https = False
+    if server_protocol == 'https':
+        use_https = True
+
     if request.form['lip'] and request.form['lport']:
-        set_server_module_var_func(lip=request.form['lip'], lport=request.form['lport'])
+        set_server_module_var_func(lip=request.form['lip'], lport=request.form['lport'],
+                                   use_https=use_https)
 
     return 'Request ServerStart Sent'
 
