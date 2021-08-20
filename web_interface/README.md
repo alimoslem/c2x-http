@@ -3,7 +3,7 @@ C2X has web interface which you can run C2 Server with it and use all of C2X fea
 
 Run
 ----
-    python c2x.py --web
+    python c2x-http.py --web
 
 - Arguments
     - --use-https [Enable HTTPS for Web Interface]
@@ -17,7 +17,7 @@ Usage
 
     python3 c2x.py --web
     Open your browser and go to:
-    http://127.0.0.1:8484
+    http(s)://127.0.0.1:8585
     Go to Server Page and Start the Server
     You can create your script in Create Script Nav
     You can see your zombies in Zombies Nav
@@ -27,18 +27,22 @@ Usage
 
 Server Page
 ----
-![Server_sc](https://user-images.githubusercontent.com/61124903/127575594-60d32a38-3b28-4741-a107-ddd129f5ac36.png)
+![Server_sc](https://user-images.githubusercontent.com/61124903/130274579-9b3881f5-592e-4392-ab89-a01dfc57d215.png)
 
 Create Script Page
 ----
-![CreateScript_sc](https://user-images.githubusercontent.com/61124903/127575808-a5fe59ed-32d6-422b-9c0f-45d1f090e752.png)
+![CreateScript_sc](https://user-images.githubusercontent.com/61124903/130274826-c88fd4d1-b835-44e7-aac6-874ebcbe88f7.png)
 
-- [Client Side README](https://github.com/nxenon/c2x/blob/main/modules/client-side/README.md)
+- [Client Side README](https://github.com/nxenon/c2x-http/blob/main/modules/clientside/README.md)
 
 Zombies Page
 ----
-![Zombies_sc](https://user-images.githubusercontent.com/61124903/127576536-d696dab8-2fee-4042-9a83-efa95b8ef639.png)
+![Zombies_sc](https://user-images.githubusercontent.com/61124903/130274844-03a6961d-ae89-484b-99fb-98ce303bda44.png)
 
 Terminal Page
 ----
-![Screenshot_terminal](https://user-images.githubusercontent.com/61124903/127780339-bc852540-919b-4977-a257-d037731fad5d.png)
+
+![Screenshot_terminal](https://user-images.githubusercontent.com/61124903/130267844-ba3a76e2-21d1-45e2-ba16-3ace1fe23282.png)
+
+![Screenshot_terminal2](https://user-images.githubusercontent.com/61124903/130267852-49f66a65-3e25-4f8e-be49-ae634f652523.png)
+
