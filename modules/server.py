@@ -127,6 +127,7 @@ class ServerModule:
         set_target_pattern = r'!set (.*) "(.*)"'
         command = command.lower()
         if command.startswith('!set'):
+            terminalLogger.log(text=f'<p>{command}</p>')
             # !set target 192.168.1.23:5656
             set_options = re.findall(set_target_pattern, command) #  [('target','192.168.1.23:5656')]
             if len(set_options) == 1:
