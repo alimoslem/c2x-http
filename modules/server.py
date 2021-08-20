@@ -15,7 +15,8 @@ import json
 from datetime import datetime
 from modules.terminal import Terminal
 import re
-from cgi import parse_header, parse_multipart
+from cgi import parse_header
+import ssl
 
 
 serverLogger = Logger(file_name='server')
@@ -98,6 +99,13 @@ class ServerModule:
     def __start_serving(self):
         global serverModule
         serverModule = self
+
+        if self.use_https:
+            self.web_server.socket = ssl.wrap_socket(self.web_server.socket,
+                                           keyfile="./web_interface/key.pem",
+                                           certfile='./web_interface/cert.pem',
+                                                     server_side=True)
+
         self.web_server.serve_forever()
 
     def stop_server(self):
