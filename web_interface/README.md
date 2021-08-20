@@ -29,6 +29,8 @@ Server Page
 ----
 ![Server_sc](https://user-images.githubusercontent.com/61124903/130274579-9b3881f5-592e-4392-ab89-a01dfc57d215.png)
 
+for starting C2 server with HTTPS you can use the default self-signed certificate or you can replace your own certificate with files in web_interface/key.pem and cert.pem . 
+
 Create Script Page
 ----
 ![CreateScript_sc](https://user-images.githubusercontent.com/61124903/130274826-c88fd4d1-b835-44e7-aac6-874ebcbe88f7.png)
