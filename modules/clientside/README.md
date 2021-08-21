@@ -12,7 +12,7 @@ After you have created script it will be in root of project.
 Available Languages
 ----
 - Python
-- Go [Not Ready Yet]
+- Go
 
 Python
 ----
@@ -23,7 +23,7 @@ Python
 
 Other instructions for Python client-side script [here](https://github.com/nxenon/c2x-http-client-py) 
 
-Go [Not Added Yet]
+Go
 ----
     For go lang you have to first compile the code created
     You have to first install Go version 1.13
@@ -35,5 +35,6 @@ Go [Not Added Yet]
     now you have c2x-http-client compiled.
     run it in target system and wait to connect to c2x server
 
+GO client script does not work when you are using HTTPS protocol if you are using self-signed certificate for C2X-HTTP server.
 
 Other instructions for GO client-side script [here](https://github.com/nxenon/c2x-http-client-go) 
